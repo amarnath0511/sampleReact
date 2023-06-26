@@ -8,7 +8,7 @@ const EmpDetail = () => {
     const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("https://sample-react-zeta.vercel.app/employee/" + empid).then((res) => {
+        fetch("http://localhost:8000/employee/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
