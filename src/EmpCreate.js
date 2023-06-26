@@ -17,7 +17,7 @@ const EmpCreate = () => {
         const empdata = { name, email, phone };
 
 
-        fetch("http://localhost:8000/employee", {
+        fetch("https://sample-react-three.vercel.app/employee", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(empdata)
