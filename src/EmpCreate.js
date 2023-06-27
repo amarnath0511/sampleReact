@@ -17,7 +17,7 @@ const EmpCreate = () => {
         const empdata = { name, email, phone };
 
 
-        fetch("https://sample-react-zeta.vercel.app/employee", {
+        fetch("https://sample-react-json-server.vercel.app/employee", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(empdata)
